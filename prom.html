@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8"-->
+    <title>Learning the concept and coding</title>
+</head>
+<body>
+<script>
+
+
+   
+
+    var p=new Promise(function(resolve,reject){
+        var x= 4+6;
+        if (x==10)
+            resolve ("executed and resolved successfully");
+       else
+           reject("rejected");
+    });
+    p.then(function (fromResolve) {
+        document.write("Promise is"+fromResolve);
+    }).catch(function(fromReject){
+        document.write("Promise is "+fromReject);
+        });
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+<!--var promise= (function new (promise (resolve reject)-->
